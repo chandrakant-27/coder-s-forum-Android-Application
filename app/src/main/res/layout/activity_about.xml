@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        tools:context=".AboutActivity">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/app_logo"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_logo_description"/>
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/appDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_description"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Our Mission"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="At Coder's Forum, we are on a mission to create a vibrant community where developers can:\n\n Connect: Forge meaningful connections with fellow coders, exchange ideas, and collaborate on innovative projects.\n\nDiscuss: Engage in insightful discussions on a wide range of coding-related topics. Whether you're a seasoned developer or just starting, there's a place for you in our community.\n\nLearn: Sharpen your skills and expand your knowledge by participating in discussions, sharing experiences, and exploring the diverse world of coding.\n\nQuiz: Test your coding prowess with our interactive quizzes. Challenge yourself, track your progress, and compete with other members to see who's the ultimate coding champion."
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtfeature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Key Features"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtDesc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Discussion Boards\n\n
+Create and explore discussion threads on various coding topics. Seek help, share your expertise, and be a part of a dynamic community passionate about coding.
+\n\n
+Quiz Challenges\n\n
+Take on quiz challenges designed to assess and enhance your coding knowledge. From beginner to expert levels, there's a quiz for every skill level."
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txtfeature1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Let's code, discuss, and quiz together at Coder's Forum!"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/contactButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:text="@string/contact_us" />
+    </LinearLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

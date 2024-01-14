@@ -1,0 +1,83 @@
+<!-- activity_welcome.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/quiz1"
+    tools:context=".WelcomeActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/black"
+        app:liftOnScroll="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/ic_dehaze"
+            app:title="Quiz "
+            app:titleTextAppearance="@style/Toolbar"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Welcome to the Quiz App!"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tvSelectSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Select Subject"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnJava"
+        style="@style/QuizButtonStyle"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="80dp"
+        android:onClick="javaQuiz"
+        android:text="Java" />
+
+    <Button
+        android:id="@+id/btnPython"
+        style="@style/QuizButtonStyle"
+        android:layout_below="@id/btnJava"
+        android:layout_marginLeft="145dp"
+
+        android:layout_marginTop="20dp"
+        android:onClick="pythonQuiz"
+        android:text="Python" />
+
+    <Button
+        android:id="@+id/btnC"
+        style="@style/QuizButtonStyle"
+        android:layout_below="@id/btnPython"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="20dp"
+        android:onClick="CQuiz"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/btnCPlusPlus"
+        style="@style/QuizButtonStyle"
+        android:layout_below="@id/btnC"
+        android:layout_marginLeft="145dp"
+
+        android:layout_marginTop="20dp"
+        android:onClick="CppQuiz"
+        android:text="C++" />
+
+    </RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558381085124",
+    "project_id": "coder-s-forum",
+    "storage_bucket": "coder-s-forum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558381085124:android:9b17079f675e1552687491",
+        "android_client_info": {
+          "package_name": "com.example.codersforum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOU_TTA8tMqiZ_EBctfKNoisC1L4BdfLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
